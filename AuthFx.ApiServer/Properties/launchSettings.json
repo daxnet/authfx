@@ -1,10 +1,11 @@
 ﻿{
   "profiles": {
-    "AuthFx.AuthServer": {
+    "AuthFx.ApiServer": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5500",
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

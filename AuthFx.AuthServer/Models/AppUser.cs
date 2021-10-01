@@ -2,13 +2,13 @@ using System.Collections.Generic;
 
 namespace AuthFx.AuthServer.Models
 {
-    public class User
+    public class AppUser
     {
-        public User()
+        public AppUser()
         {
         }
 
-        public User(string userName, string displayName, string email)
+        public AppUser(string userName, string displayName, string email)
             => (UserName, DisplayName, Email) = (userName, displayName, email);
 
         public string UserName { get; set; }
@@ -23,11 +23,11 @@ namespace AuthFx.AuthServer.Models
 
         public override string ToString() => UserName;
 
-        public static readonly IEnumerable<User> MockUsers
+        public static readonly IEnumerable<AppUser> MockUsers
             = new[]
             {
-                new User("super", "Super User", "super@authfx.com"),
-                new User("admin", "Admin User", "admin@authfx.com")
+                new AppUser("super", "Super User", "super@authfx.com"),
+                new AppUser("admin", "Admin User", "admin@authfx.com")
             };
     }
 }
